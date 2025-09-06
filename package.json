@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "Automated whatsapp md bot created using nodejs and baileys lib",
   "main": "index.js",
-  "scripts": {
-  "start": "pm2 start index.js --name LUCKY-XD --watch --restart-delay=3000 --time",
-  "stop": "pm2 stop LUCKY-XD",
-  "restart": "pm2 restart LUCKY-XD",
-  "logs": "pm2 logs LUCKY-XD"
-},
+"scripts": {
+    "start": "pm2 start index.js --deep-monitoring --attach --name LUCKY-XD",
+    "stop": "pm2 stop LUCKY-XD",
+    "restart": "pm2 restart LUCKY-XD"
+  },
   "dependencies": {
     "axios": "^1.7.9",
     "pm2": "latest",
